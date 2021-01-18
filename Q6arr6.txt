@@ -1,0 +1,29 @@
+link: https://practice.geeksforgeeks.org/problems/ishaan-loves-chocolates2156/1/?category[]=Arrays&category[]=Arrays&difficulty[]=-1&page=1&query=category[]Arraysdifficulty[]-1page1category[]Arrays
+
+
+
+
+
+
+Code:
+#include<vector>
+#include <algorithm>
+using namespace std;
+
+int main() {
+	int t=0;
+	
+	cin >> t;
+	while (t--){
+	    int n=0;
+	    cin >> n;
+	    int a;
+	    vector <int> vec;
+	    for(int i=0;i<n;i++){
+	        cin >> a;
+	        vec.push_back(a);
+	    }
+	    cout << *min_element (vec.begin(),vec.end());
+	    cout << endl;
+	}
+}
