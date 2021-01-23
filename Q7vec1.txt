@@ -1,0 +1,40 @@
+Link: https://www.hackerrank.com/challenges/variable-sized-arrays/problem
+
+
+
+Code:
+
+
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    
+    int n,q,s;
+    cin>>n>>q;
+    vector<vector<int>> v(n);
+    int el;
+    for(int i = 0; i < n; i++)
+    {   
+       cin>>s;
+       v[i] = vector<int>(s);
+        for(int j = 0; j < s; j++)
+        {
+            cin>>el;
+            v[i][j]=el;
+        }    
+    }
+    int p,ind;
+    for(int i=0;i<q;i++)
+    {
+        cin>>p>>ind;
+        cout<<v[p][ind]<<endl;    
+    }
+    
+}
