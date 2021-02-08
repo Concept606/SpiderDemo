@@ -1,0 +1,17 @@
+Link:https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/find-product/
+
+
+
+Code:
+#include<iostream>
+using namespace std;
+int main(){
+	long int num[1000],n,i,ans=1;
+	cin>>n;
+	for(i=0;i<n;i++)
+	cin>>num[i];
+	for(i=0;i<n;i++)
+	{ans=(ans*num[i])%1000000007;}
+	cout<<ans;
+	return 0;
+}
