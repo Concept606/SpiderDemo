@@ -1,0 +1,30 @@
+Link:https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/modify-the-string/submissions/
+
+
+
+
+Code:
+
+
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    int i,j;
+    /*char n='a';
+    n=n-32;
+    cout<<n;*/
+    char line[100];
+    cin>>line;
+    j=strlen(line);
+    for(i=0;i<j;i++)
+    {
+        if(line[i]>=65 && line[i]<=90)
+        {line[i]=line[i]+32;}
+        else
+        {line[i]=line[i]-32;}
+    }
+  for(i=0;i<j;i++)
+    cout<<line[i];
+}

@@ -1,0 +1,30 @@
+Link::https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/is-zoo-f6f309e7/submissions/
+
+
+
+Code:
+
+
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+	int zs=0,os=0;
+	
+	//2*x=y;
+	char s[20];
+	cin>>s;
+	for(int i=0;i<strlen(s);i++)
+	{
+		if(s[i]=='z')
+		zs++;
+		else
+		os++;
+	}
+	if((2*zs)==os)
+	cout<<"Yes";
+	else
+	cout<<"No";
+
+}

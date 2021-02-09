@@ -1,0 +1,28 @@
+Link:
+https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/palindrome-check-2/submissions/
+
+
+
+Code:
+
+
+
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main(){
+char s[100];
+int n,i,flag=0;
+cin>>s;
+n=strlen(s);
+for(i=0;i<n;i++)
+{
+if (s[i]==s[n-1-i])
+flag=1;
+else { flag=0; break;}
+}
+if (flag==1)
+cout<<"YES";
+else
+cout<<"NO";
+}
